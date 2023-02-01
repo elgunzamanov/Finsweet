@@ -10,6 +10,13 @@
    &--black { color: #000 !important; }
 }
 
+.u-text-muted {
+   line-height: 1.75 !important;
+   opacity: .6 !important;
+
+   &--big { font-size: 1.8rem !important; }
+}
+
 .u-text-title {
    letter-spacing: -0.03em !important;
 

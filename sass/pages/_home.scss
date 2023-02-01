@@ -1,6 +1,70 @@
 .quote {
    background-color: $color-grey-steel;
    grid-column: full-start / full-end;
+
+   padding: 12.8rem 0;
+
+   display: grid;
+   grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 128rem) minmax(4rem, 1fr);
+
+   &__container {
+      grid-column: 2 / 3;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 7rem;
+   }
+
+   &__service-container {
+      display: grid;
+      grid-row-gap: 3.2rem;
+   }
+
+   &__service {
+      display: grid;
+      grid-template-columns: min-content minmax(min-content, 1fr);
+      grid-column-gap: 1.6rem;
+      justify-items: start;
+   }
+
+   &__service-icon-box {
+      width: 4.7rem;
+      height: 4.7rem;
+      background-color: $color-white;
+      border-radius: 50%;
+      @include flexCenter;
+      grid-row: 1 / span 2;
+   }
+
+   &__service-text { max-width: 32rem; }
+
+   &__service-link {
+      grid-column: 2 / 3;
+      margin-top: 3.2rem;
+   }
+
+   &__form {
+      display: grid;
+      grid-template-columns: minmax(min-content, 1fr);
+      grid-row-gap: 4px;
+   }
+
+   &__form-input {
+      padding: 2.3rem 4rem;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      font-family: inherit;
+      transition: border-color .4s ease;
+
+      &:focus {
+         outline: none;
+         border: 1px solid $color-grey;
+      }
+   }
+
+   &__form-button {
+      justify-self: start;
+      margin-top: 3.2rem;
+   }
 }
 
 .home-process {
