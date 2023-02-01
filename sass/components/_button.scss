@@ -37,7 +37,5 @@
       transition: all .4s ease;
    }
 
-   &:hover &__icon {
-      transform: translateX(1.2rem);
-   }
+   &:hover &__icon { transform: translateX(1.2rem); }
 }

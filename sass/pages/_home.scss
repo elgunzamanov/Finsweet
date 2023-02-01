@@ -1,7 +1,6 @@
 .quote {
    background-color: $color-grey-steel;
    grid-column: full-start / full-end;
-
    padding: 12.8rem 0;
 
    display: grid;
@@ -68,8 +67,12 @@
 }
 
 .home-process {
-   background-color: $color-mint;
    grid-column: center-start / center-end;
+   padding: 12.8rem 0;
+
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 13rem;
 }
 
 .home-services {
