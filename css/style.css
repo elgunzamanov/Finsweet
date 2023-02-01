@@ -20,6 +20,10 @@ body {
   line-height: 2.4rem;
   color: #1E1B1B; }
 
+.u-text-caption {
+  font-weight: 500 !important;
+  opacity: .7 !important; }
+
 .cta {
   background-color: #00D289;
   grid-column: full-start / full-end; }
@@ -36,7 +40,65 @@ body {
   grid-column: center-start / center-end; }
 
 .nav {
-  background-color: #FF6433; }
+  padding: 1.5rem 0;
+  background-color: #FFF;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 128rem) minmax(4rem, 1fr); }
+  .nav__container {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between; }
+  .nav__logo-link {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: start; }
+  .nav__menu {
+    display: flex;
+    align-items: center; }
+  .nav__list {
+    list-style: none;
+    display: flex; }
+    .nav__list:hover a {
+      color: #939191; }
+    .nav__list a:hover {
+      color: #1E1B1B; }
+  .nav__link {
+    padding: .2rem 1.6rem; }
+    .nav__link:link, .nav__link:visited {
+      text-decoration: none;
+      color: inherit; }
+  .nav__divider {
+    width: 1px;
+    height: 4.2rem;
+    background-color: rgba(147, 145, 145, 0.36);
+    margin: 0 3.2rem 0 1.6rem; }
+  .nav__phone-info {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 1.4rem;
+    align-items: center; }
+  .nav__phone-icon-link {
+    width: 4rem;
+    height: 4rem;
+    grid-row: 1 / span 2; }
+  .nav__phone-icon {
+    width: 100%;
+    height: 100%;
+    fill: #61C4A1; }
+    .nav__phone-icon:hover {
+      fill: #8FBC8F; }
+  .nav__phone-number:link, .nav__phone-number:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 1.75;
+    color: inherit;
+    grid-column: 2 / 3; }
+  .nav__phone-number:hover, .nav__phone-number:active {
+    color: #FF6433; }
 
 .quote {
   background-color: #E2E6E9;

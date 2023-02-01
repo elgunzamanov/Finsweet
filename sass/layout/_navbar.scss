@@ -1,3 +1,89 @@
 .nav {
-   background-color: $color-primary;
+   padding: 1.5rem 0;
+   background-color: $color-white;
+
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 100;
+
+   display: grid;
+   grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 128rem) minmax(4rem, 1fr);
+
+   &__container {
+      grid-column: 2 / 3;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__logo-link {
+      grid-column: 2 / 3;
+      align-self: center;
+      justify-self: start;
+   }
+
+   &__menu {
+      display: flex;
+      align-items: center;
+   }
+
+   &__list {
+      list-style: none;
+      display: flex;
+
+      &:hover a { color: $color-grey; }
+      & a:hover { color: $color-black; }
+   }
+
+   &__link {
+      padding: .2rem 1.6rem;
+
+      &:link,
+      &:visited {
+         text-decoration: none;
+         color: inherit;
+      }
+   }
+
+   &__divider {
+      width: 1px;
+      height: 4.2rem;
+      background-color: rgba($color-grey, .36);
+      margin: 0 3.2rem 0 1.6rem;
+   }
+
+   &__phone-info {
+      display: grid;
+      grid-template-columns: min-content max-content;
+      grid-column-gap: 1.4rem;
+      align-items: center;
+   }
+
+   &__phone-icon-link {
+      width: 4rem;
+      height: 4rem;
+      grid-row: 1 / span 2;
+   }
+
+   &__phone-icon {
+      width: 100%;
+      height: 100%;
+      fill: #61C4A1;
+
+      &:hover { fill: #8FBC8F; }
+   }
+
+   &__phone-number {
+      &:link,
+      &:visited {
+         text-decoration: none;
+         font-size: 1.8rem;
+         line-height: 1.75;
+         color: inherit;
+         grid-column: 2 / 3;
+      }
+
+      &:hover,
+      &:active { color: $color-primary; }
+   }
 }
