@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.main {
+  display: grid;
+  grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end]; }
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: #1E1B1B; }
+
+.cta {
+  background-color: #00D289;
+  grid-column: full-start / full-end; }
+
+.experience {
+  background-color: #E2E6E9;
+  grid-column: full-start / full-end; }
+
+.footer {
+  background-color: #661CE7; }
+
+.home-header {
+  background-color: #00D289;
+  grid-column: center-start / center-end; }
+
+.nav {
+  background-color: #FF6433; }
+
+.quote {
+  background-color: #E2E6E9;
+  grid-column: full-start / full-end; }
+
+.home-process {
+  background-color: #00D289;
+  grid-column: center-start / center-end; }
+
+.home-services {
+  background-color: #F2F2F2;
+  grid-column: full-start / full-end; }
+
+.brands {
+  background-color: #00D289;
+  grid-column: center-start / center-end; }
+
+.testimonials {
+  background-color: #E2E6E9;
+  grid-column: full-start / full-end; }
+
+.faq {
+  background-color: #00D289;
+  grid-column: full-start / full-end; }
