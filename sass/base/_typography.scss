@@ -5,3 +5,13 @@ body {
    line-height: 2.4rem;
    color: $color-black;
 }
+
+[class*="heading-"] {
+   letter-spacing: -0.03em;
+}
+
+.heading-1 {
+   font-weight: 800;
+   font-size: 6.4rem;
+   line-height: 8.4rem;
+}
