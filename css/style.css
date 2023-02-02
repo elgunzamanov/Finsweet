@@ -348,7 +348,43 @@ body {
 
 .home-services {
   background-color: #F2F2F2;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 12rem 0;
+  display: grid;
+  grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 128rem) minmax(4rem, 1fr); }
+  .home-services__container {
+    grid-column: 2 / 3;
+    display: grid; }
+  .home-services__title {
+    max-width: 85rem;
+    margin: 0 auto;
+    text-align: center; }
+  .home-services__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .8rem; }
+  .home-services__item {
+    width: 32rem;
+    height: 23rem;
+    background-color: #FFF; }
+    .home-services__item--active {
+      background-color: #FF6433; }
+  .home-services__item-link {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    text-decoration: none;
+    color: inherit; }
+    .home-services__item-link:hover, .home-services__item-link:active {
+      background-color: #FF6433; }
+  .home-services__item-icon {
+    width: 4rem;
+    height: 4rem; }
+  .home-services__link {
+    justify-self: end; }
 
 .brands {
   background-color: #00D289;

@@ -78,6 +78,58 @@
 .home-services {
    background-color: $color-grey-light;
    grid-column: full-start / full-end;
+   padding: 12rem 0;
+
+   display: grid;
+   grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 128rem) minmax(4rem, 1fr);
+
+   &__container {
+      grid-column: 2 / 3;
+      display: grid;
+   }
+
+   &__title {
+      max-width: 85rem;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: .8rem;
+   }
+
+   &__item {
+      width: 32rem;
+      height: 23rem;
+      background-color: $color-white;
+
+      &--active {
+         background-color: $color-primary;
+      }
+   }
+
+   &__item-link {
+      height: 100%;
+      @include flexCenter;
+      flex-direction: column;
+      row-gap: 1.2rem;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover,
+      &:active {
+         background-color: $color-primary;
+      }
+   }
+
+   &__item-icon {
+      width: 4rem;
+      height: 4rem;
+   }
+
+   &__link { justify-self: end; }
 }
 
 .brands {
