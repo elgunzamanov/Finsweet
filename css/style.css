@@ -37,6 +37,8 @@ body {
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 6.7rem; }
+  .heading-3--white {
+    color: #FFF; }
 
 .u-text-caption {
   font-weight: 500 !important;
@@ -94,6 +96,9 @@ body {
   .btn--primary:hover, .btn--primary:active {
     background-color: #ff460c; }
 
+.btn--secondary {
+  background-color: #1E1B1B; }
+
 .btn-text {
   text-decoration: none;
   color: inherit;
@@ -111,7 +116,28 @@ body {
 
 .cta {
   background-color: #00D289;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  position: relative; }
+  .cta .cta__image-left, .cta .cta__image-right {
+    width: 50%;
+    height: 50rem;
+    background-size: cover; }
+  .cta__image-left {
+    background-image: url("../../assets/cta-image-left.png");
+    background-position: 5% 5%; }
+  .cta__content {
+    width: 40%;
+    position: absolute;
+    inset: 0 0 0 20%;
+    padding: 10rem 6rem;
+    background-color: #FF6433;
+    z-index: 5; }
+  .cta__image-right {
+    background-image: url("../../assets/cta-image-right.jpg");
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    right: 0; }
 
 .experience {
   background-color: #E2E6E9;

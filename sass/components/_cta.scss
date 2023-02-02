@@ -1,4 +1,35 @@
 .cta {
    background-color: $color-mint;
    grid-column: full-start / full-end;
+   position: relative;
+
+   %cta-image {
+      width: 50%;
+      height: 50rem;
+      background-size: cover;
+   }
+
+   &__image-left {
+      background-image: url("../../assets/cta-image-left.png");
+      background-position: 5% 5%;
+      @extend %cta-image;
+   }
+
+   &__content {
+      width: 40%;
+      position: absolute;
+      inset: 0 0 0 20%;
+      padding: 10rem 6rem;
+      background-color: $color-primary;
+      z-index: 5;
+   }
+
+   &__image-right {
+      background-image: url("../../assets/cta-image-right.jpg");
+      background-position: 50% 50%;
+      @extend %cta-image;
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
 }

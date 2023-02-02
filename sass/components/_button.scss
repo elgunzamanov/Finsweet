@@ -19,6 +19,8 @@
       &:hover,
       &:active { background-color: #ff460c; }
    }
+
+   &--secondary { background-color: $color-black; }
 }
 
 .btn-text {
