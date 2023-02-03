@@ -1,4 +1,14 @@
 .experience {
    background-color: $color-grey-steel;
    grid-column: full-start / full-end;
+
+   display: grid;
+   grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 128rem) minmax(4rem, 1fr);
+   padding: 4.8rem 0;
+
+   &__container {
+      grid-column: 2 / 3;
+      display: flex;
+      justify-content: space-between;
+   }
 }

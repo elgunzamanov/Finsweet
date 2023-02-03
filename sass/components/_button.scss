@@ -17,10 +17,14 @@
       background-color: $color-primary;
 
       &:hover,
-      &:active { background-color: #ff460c; }
+      &:active {
+         background-color: #ff460c;
+      }
    }
 
-   &--secondary { background-color: $color-black; }
+   &--secondary {
+      background-color: $color-black;
+   }
 }
 
 .btn-text {
@@ -39,5 +43,7 @@
       transition: all .4s ease;
    }
 
-   &:hover &__icon { transform: translateX(1.2rem); }
+   &:hover &__icon {
+      transform: translateX(1.2rem);
+   }
 }

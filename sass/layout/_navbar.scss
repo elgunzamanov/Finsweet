@@ -31,8 +31,13 @@
       list-style: none;
       display: flex;
 
-      &:hover a { color: $color-grey; }
-      & a:hover { color: $color-black; }
+      &:hover a {
+         color: $color-grey;
+      }
+
+      & a:hover {
+         color: $color-black;
+      }
    }
 
    &__link {
@@ -70,7 +75,9 @@
       height: 100%;
       fill: #61C4A1;
 
-      &:hover { fill: #8FBC8F; }
+      &:hover {
+         fill: #8FBC8F;
+      }
    }
 
    &__phone-number {
@@ -84,6 +91,8 @@
       }
 
       &:hover,
-      &:active { color: $color-primary; }
+      &:active {
+         color: $color-primary;
+      }
    }
 }

@@ -34,7 +34,9 @@
       grid-row: 1 / span 2;
    }
 
-   &__service-text { max-width: 32rem; }
+   &__service-text {
+      max-width: 32rem;
+   }
 
    &__service-link {
       grid-column: 2 / 3;
@@ -96,12 +98,12 @@
 
    &__list {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       grid-gap: .8rem;
+      justify-content: center;
    }
 
    &__item {
-      width: 32rem;
       height: 23rem;
       background-color: $color-white;
 
@@ -129,7 +131,9 @@
       height: 4rem;
    }
 
-   &__link { justify-self: end; }
+   &__link {
+      justify-self: end;
+   }
 }
 
 .brands {

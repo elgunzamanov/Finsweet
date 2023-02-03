@@ -3,18 +3,21 @@
    opacity: .7 !important;
 
    &--muted {
-      font-weight: 500 !important;
       color: $color-grey !important;
    }
 
-   &--black { color: #000 !important; }
+   &--black {
+      color: #000 !important;
+   }
 }
 
 .u-text-muted {
    line-height: 1.75 !important;
    opacity: .6 !important;
 
-   &--big { font-size: 1.8rem !important; }
+   &--big {
+      font-size: 1.8rem !important;
+   }
 }
 
 .u-text-title {
@@ -30,10 +33,32 @@
       line-height: 4.8rem !important;
       font-weight: 700 !important;
    }
+
+   &--muted {
+      opacity: .7;
+   }
 }
 
-.u-mb-sm { margin-bottom: .8rem !important; }
-.u-mb-md { margin-bottom: 1.6rem !important; }
-.u-mb-lg { margin-bottom: 3.2rem !important; }
-.u-mb-xl { margin-bottom: 4.8rem !important; }
-.u-mb-xxl { margin-bottom: 6.4rem !important; }
+.u-text-center {
+   text-align: center;
+}
+
+.u-mb-sm {
+   margin-bottom: .8rem !important;
+}
+
+.u-mb-md {
+   margin-bottom: 1.6rem !important;
+}
+
+.u-mb-lg {
+   margin-bottom: 3.2rem !important;
+}
+
+.u-mb-xl {
+   margin-bottom: 4.8rem !important;
+}
+
+.u-mb-xxl {
+   margin-bottom: 6.4rem !important;
+}
