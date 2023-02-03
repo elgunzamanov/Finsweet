@@ -68,9 +68,6 @@ body {
   .u-text-title--muted {
     opacity: .7; }
 
-.u-text-center {
-  text-align: center; }
-
 .u-mb-sm {
   margin-bottom: .8rem !important; }
 
@@ -426,8 +423,17 @@ body {
     justify-self: end; }
 
 .brands {
-  background-color: #00D289;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  padding: 12rem 0 8rem 0; }
+  .brands__heading {
+    text-align: center; }
+  .brands__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 4rem; }
+  .brands__logo {
+    max-width: 22rem;
+    height: auto; }
 
 .testimonials {
   background-color: #E2E6E9;

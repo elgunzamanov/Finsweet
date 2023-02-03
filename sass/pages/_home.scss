@@ -137,8 +137,23 @@
 }
 
 .brands {
-   background-color: $color-mint;
    grid-column: center-start / center-end;
+   padding: 12rem 0 8rem 0;
+
+   &__heading {
+      text-align: center;
+   }
+
+   &__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+      grid-gap: 4rem;
+   }
+
+   &__logo {
+      max-width: 22rem;
+      height: auto;
+   }
 }
 
 .testimonials {
